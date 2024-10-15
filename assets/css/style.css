@@ -1,0 +1,41 @@
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header{
+    background-color: red;
+}
+
+/* Main */
+main {
+    background-color: orange;
+}
+
+/* Footer */
+footer {
+    background-color: green;
+}
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 578px) {
+    
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
