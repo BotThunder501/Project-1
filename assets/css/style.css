@@ -44,9 +44,9 @@ header a {
     margin-bottom: 1em;
 }
 
-.active {
+/* .active {
     border-bottom: 1px solid #3a3a3a;
-}
+} */
 
 /* Navbar styles with dropdown toggle */
 nav {
@@ -97,19 +97,18 @@ main {
     flex: 1 0 250px;
     margin: 10px;
     text-align: center;
-    padding: 80px;
+    padding: 90px;
 }
 
-.flexcomponents p {
-    color: rgb(8, 15, 117);
-    font-weight: bold;
+.construct {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 4em;
     z-index: 4;
-    text-align: center;
 }
 
 #cpu {
     background: url(../images/cpubackground.jpg) no-repeat center center/cover;
-    opacity: 0.6;
 }
 
 #cpucooler {
@@ -125,7 +124,7 @@ main {
 }
 
 #ssd {
-    background: url(../images/storage.jpg) no-repeat center center/cover;
+    background: url(../images/storage1.jpg) no-repeat center center/cover;
 }
 
 #gpu {
@@ -189,8 +188,27 @@ main {
         line-height: 75px;
         margin: 0 0.5rem;
     }
+    main {
+        /* Make main element take up any surplus space to push footer down */
+        flex: 1 0 auto;
+        margin-top:80px;
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 @media screen and (min-width: 1200px) {
-
+    
+    main {
+        /* Make main element take up any surplus space to push footer down */
+        flex: 1 0 auto;
+        margin-top:80px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .construct:hover {
+        color: red;
+    }
 }
