@@ -12,19 +12,149 @@ body {
     flex-direction: column;
 }
 
+.hidden-heading {
+    display: none;
+}
+
 /* Header */
-header{
-    background-color: red;
+header {
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu>li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/* nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* Main */
 main {
-    background-color: orange;
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
 
+/* boxes to different sections */
+.flexparts {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+    background-color: lightgrey;
+    margin:20px auto;
+    
+}
+
+.flexcomponents {
+    flex: 1 0 250px;
+    margin: 10px;
+    text-align: center;
+    padding: 80px;
+}
+
+.flexcomponents p {
+    color: rgb(8, 15, 117);
+    font-weight: bold;
+    z-index: 4;
+    text-align: center;
+}
+
+#cpu {
+    background: url(../images/cpubackground.jpg) no-repeat center center/cover;
+    opacity: 0.6;
+}
+
+#cpucooler {
+    background: url(../images/cpucooler.jpg) no-repeat center center/cover;
+}
+
+#motherboard {
+    background: url(../images/motherboard.jpg) no-repeat center center/cover;
+}
+
+#ram {
+    background: url(../images/ram.jpg) no-repeat center center/cover;
+}
+
+#ssd {
+    background: url(../images/storage.jpg) no-repeat center center/cover;
+}
+
+#gpu {
+    background: url(../images/gpu.jpg) no-repeat center center/cover;
+}
+
+#psu {
+    background: url(../images/psu.jpg) no-repeat center center/cover;
+}
+
+#case {
+    background: url(../images/case.jpg) no-repeat center center/cover;
+}
+
+
+
 /* Footer */
-footer {
-    background-color: green;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 578px) {
@@ -33,7 +163,32 @@ footer {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
 
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
