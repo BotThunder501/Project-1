@@ -44,9 +44,9 @@ header a {
     margin-bottom: 1em;
 }
 
-/* .active {
+.active {
     border-bottom: 1px solid #3a3a3a;
-} */
+}
 
 /* Navbar styles with dropdown toggle */
 nav {
@@ -77,20 +77,34 @@ nav {
 main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-    margin-top: 47px;
+    margin-top: 39px;
     display: flex;
     flex-direction: column;
+    background-color: lightblue;
+}
+
+img {
+    width: 100vw;
+    height: 300px;
+    padding: 0 10px;
+}
+
+section>p {
+    display: flex;
+    text-wrap: wrap;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /* boxes to different sections */
 .flexparts {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 20px 0;
     justify-content: space-around;
-    background-color: lightgrey;
-    margin:20px auto;
-    
+    background-color: lightblue;
+    /* margin: 20px auto; */
 }
 
 .flexcomponents {
@@ -139,8 +153,6 @@ main {
     background: url(../images/case.jpg) no-repeat center center/cover;
 }
 
-
-
 /* Footer */
 #social-networks {
     text-align: center;
@@ -155,13 +167,21 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
+
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 578px) {
-    
+
+    img {
+        width: 100vw;
+        height: 400px;
+        padding: 0 10px;
+    }
+
 }
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -188,26 +208,31 @@ main {
         line-height: 75px;
         margin: 0 0.5rem;
     }
+
     main {
         /* Make main element take up any surplus space to push footer down */
         flex: 1 0 auto;
-        margin-top:80px;
+        margin-top: 77px;
         display: flex;
         flex-direction: column;
     }
-    
+
+    img {
+        width: auto;
+        height: 600px;
+        /* padding: 0 10px; */
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    
     main {
         /* Make main element take up any surplus space to push footer down */
         flex: 1 0 auto;
-        margin-top:80px;
+        margin-top: 77px;
         display: flex;
         flex-direction: column;
     }
-    
+
     .construct:hover {
         color: red;
     }

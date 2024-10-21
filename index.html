@@ -10,18 +10,17 @@
     <!-- Title -->
     <title>Building PCs</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/cpu32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/cpu16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/cpu32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/cpu16.png" />
     <!-- stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <header>
         <!-- change style -->
         <a href="index.html">
-            <h1 id="logo">
-                Building PCs
-            </h1>
+            <h1 id="logo">Building PCs</h1>
         </a>
         <input type="checkbox" name="nav-toggle" id="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
@@ -35,7 +34,27 @@
     </header>
     <main>
         <section>
-            content: why build PCs, who can build pcs, accessible fonts, add pic of my setup 
+            <picture>
+                <source media="(max-width: 576px)" srcset="assets/images/cat1.jpg">
+                <source media="(max-width: 768px)" srcset="assets/images/cat2.jpg">
+                <img src="assets/images/desktop.jpg" alt="Picture of my desktop and cats depending on screen size">
+            </picture>
+            <!-- content: why build PCs, who can build pcs, accessible fonts, add pic of my setup, when on phone shows pic of
+            cat
+
+            use picture tag, add 3 images, one for phone, table then laptop/pc 
+
+            on about me page on mobile image above text and square, as gets bigger text goes to the right and image turns into circle
+
+            contact page, form field to send me an email -->
+
+            <p>This website is to show people, who are new to building PCs, what information is required to build a PC.</p>
+            <br>
+            <p>Building a PC is very educational as you will learn the ins and outs of how a computer works. If any problems are to arise you'll learn how to troubleshoot the problems yourself.</p>
+            <br>
+            <p>Later on will be an interactive page where you drag PC components to a motherboard to see if you know which part goes where.</p>
+            <br>
+            <p>Below are images of each core component to a PC. Clicking on the icon will direct you to a page that describes each component, how they fit and why it is needed. </p>
         </section>
         <section>
             <h2></h2>
@@ -71,7 +90,8 @@
     <footer>
         <!-- change style -->
         <ul id="social-networks">
-            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
                     aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
             </li>
             <li>
@@ -94,4 +114,5 @@
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/f95165e036.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
