@@ -16,7 +16,8 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-h1 {
+h1,
+h2 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -204,7 +205,51 @@ section>p {
 }
 
 /* contact */
+#contactme {
+    background-image: url(../images/mont12.jpg);
+    background-size: cover;
+    background-position: 35%;
+    padding: 20px 10% 0 10%;
+    align-content: center;
+    flex-grow: 1;
+}
 
+
+#contact-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+
+#contact-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+.text-area {
+    height: 100px;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #454b1b;
+    color: #fafafa;
+}
 
 
 /* underconstruct page */
@@ -304,12 +349,32 @@ section>p {
     }
 
     #desc {
-        margin-top: 130px;
+        align-content: center;
     }
 
     #catpics {
         column-count: 2;
         column-gap: 0;
+    }
+
+    /* contact */
+    #contactme {
+        background-position: center;
+        position: relative;
+    }
+
+    #contact-form {
+        max-width: 600px;
+        align-content: center;
+    }
+
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
     }
 
 }
@@ -331,7 +396,7 @@ section>p {
 
     /* about */
     #desc {
-        margin-top: 160px;
+        align-content: center
     }
 
     #catpics {
