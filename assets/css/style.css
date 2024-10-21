@@ -1,3 +1,6 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
@@ -10,10 +13,13 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Lato', sans-serif;
 }
 
-.hidden-heading {
-    display: none;
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /* Header */
@@ -83,13 +89,15 @@ main {
     background-color: lightblue;
 }
 
-img {
-    width: 100vw;
-    height: 300px;
+#mainpic>img {
+    width: 100%;
+    height: 250px;
     padding: 0 10px;
 }
 
 section>p {
+    font-size: 110%;
+    font-weight: bold;
     display: flex;
     text-wrap: wrap;
     padding-top: 5px;
@@ -114,6 +122,7 @@ section>p {
     padding: 90px;
 }
 
+/* icon on each box */
 .construct {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -121,6 +130,7 @@ section>p {
     z-index: 4;
 }
 
+/* images for each box */
 #cpu {
     background: url(../images/cpubackground.jpg) no-repeat center center/cover;
 }
@@ -153,6 +163,61 @@ section>p {
     background: url(../images/case.jpg) no-repeat center center/cover;
 }
 
+/* pic for about page */
+#pics {
+    background: url(../images/mine.png) no-repeat top center/ cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 5px;
+    /* Makes the square image into a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#desc {
+    padding: 0 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#desc>p {
+    font-size: 120%;
+}
+
+#catpics img {
+    width: 100%;
+    height: 500px;
+    line-height: 1em;
+    padding: 0;
+}
+
+#catpics {
+    line-height: 0;
+}
+
+/* contact */
+
+
+
+/* underconstruct page */
+#undercons {
+    background-image: url(../images/underconstruct.webp);
+    /* background-repeat: repeat-y; */
+    background-position: center center;
+    /* background-attachment: fixed; */
+    background-size: 50% 50%;
+    width: 100%;
+    height: 100vh;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -169,14 +234,13 @@ section>p {
 }
 
 /* Media query: large or landscape phones (576px and up) */
-@media screen and (min-width: 578px) {
+@media screen and (min-width: 576px) {
 
-    img {
-        width: 100vw;
+    #mainpic img {
+        width: 100%;
         height: 400px;
         padding: 0 10px;
     }
-
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -209,6 +273,7 @@ section>p {
         margin: 0 0.5rem;
     }
 
+    /* main */
     main {
         /* Make main element take up any surplus space to push footer down */
         flex: 1 0 auto;
@@ -217,14 +282,41 @@ section>p {
         flex-direction: column;
     }
 
-    img {
-        width: auto;
-        height: 600px;
-        /* padding: 0 10px; */
+    /* picture tag */
+    #mainpic img {
+        width: 100%;
+        height: 550px;
+        padding: 0 10px;
     }
+
+    /* about page */
+    #pics {
+        /* Makes the square image into a circle */
+        margin-bottom: 0;
+        border-radius: 0;
+        max-width: 300px;
+        max-height: 400px;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #desc {
+        margin-top: 130px;
+    }
+
+    #catpics {
+        column-count: 2;
+        column-gap: 0;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
+
+    /* main stuff */
     main {
         /* Make main element take up any surplus space to push footer down */
         flex: 1 0 auto;
@@ -235,5 +327,14 @@ section>p {
 
     .construct:hover {
         color: red;
+    }
+
+    /* about */
+    #desc {
+        margin-top: 160px;
+    }
+
+    #catpics {
+        column-count: 4;
     }
 }
