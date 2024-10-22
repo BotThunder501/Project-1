@@ -23,6 +23,10 @@ h2 {
     letter-spacing: 2px;
 }
 
+.hidden-heading {
+    display: none;
+}
+
 /* Header */
 header {
     background-color: #ffffff;

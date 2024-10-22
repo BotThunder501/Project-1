@@ -1,4 +1,4 @@
-# Project 1
+# Building PCs
 
 This README file will document my journey of creating this website that will be about building PCs.  
 It is targeted towards people interested in building PCs mainly new people as building PCs can seem very daunting.  
@@ -14,3 +14,17 @@ Below is a wireframe of how the website will look on mobile and how it will look
 - validator testing, w3c validator, use lighthouse dev tools after deploying
 - deployment at the end
 - credits, any content ive used aka images or code
+
+## Features
+
+### Existing Features
+
+## Testing
+
+### Validator Testing
+
+## Deployment
+
+### Content
+
+### Media
