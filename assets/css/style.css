@@ -101,7 +101,7 @@ main {
 }
 
 section>p {
-    font-size: 110%;
+    font-size: 1.5rem;
     font-weight: bold;
     display: flex;
     text-wrap: wrap;
@@ -194,7 +194,7 @@ section>p {
 }
 
 #desc>p {
-    font-size: 120%;
+    font-size: 1.5rem;
 }
 
 #catpics img {
