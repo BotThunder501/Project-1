@@ -1,4 +1,4 @@
-- name: TOC Generator
+  name: TOC Generator
   # You may pin to the exact commit or the version.
   # uses: technote-space/toc-generator@05e2282e4bcbde42d6c2b7f055db0627a49010de
   uses: technote-space/toc-generator@v4.0.0
